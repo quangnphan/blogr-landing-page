@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100vw;
 }
 h1,h2,h3{
     font-family: 'Overpass', sans-serif;
@@ -299,10 +300,7 @@ ul {
     text-decoration: underline;
 }
 
-@media (max-width: 800px){
-    .wrapper{
-        max-width: 800px;
-    }
+@media (max-width: 500px){
     .desk{
         display: none;
     }
@@ -318,49 +316,64 @@ ul {
     .menu-btn{
         display: block;
     }
-    
     .navbar{
-        margin: 0;
-        width: 100%;
+        margin: 0 10px;
     }
     .intro{
-        margin: 0;
+        padding: 50px 20px;
         width: 100%;
+        padding: 10px auto 100px auto;
     }
     .intro .heading h1{
-        font-size: 2.8rem;
+        font-size: 1.8rem;
+        width: 100%;
+        margin: auto;
+    }
+    .intro .heading p{
+        width: 100%;
+        margin: 30px auto;
     }
     .top-wrapper{
         flex-direction: column;
-        overflow: unset;
         text-align: center;
-        margin:100px auto;
-        padding:0;
+        margin: auto;
+        width: 100vw;
     }
     .top-wrapper .flex{
         flex-direction: column-reverse;
     }
     .top-wrapper .text{
-        margin: 0 20px;
-        width: 80%;
+        width: 350px;
+        margin: auto;
     }
+    .top-wrapper h2{
+        width: 80%;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .top-wrapper .picture .mobile{
+        margin: auto;
+    }
+
     .middle-wrapper{
-        margin: 140px auto;
         padding: 0;
         flex-direction: column;
         height: 600px;
         text-align: center;
         background-position: 50% 120%;
+        width: 100vw;
+        margin: 0;
     }
     .middle-wrapper img{
         position: relative;
         top: 100px;
         left: 0;
         bottom: 0;
+        width: 350px;
+        height: auto;
     }
     .middle-wrapper .text{
-        margin: 0 20px;
-        padding: 50px;
+        width: 80%;
     }
 
 
@@ -368,6 +381,7 @@ ul {
         margin: 0;
         padding: 0;
         text-align: center;
+        width: 100vw;
     }
     .bottom-wrapper .flex{
         flex-direction: column;
@@ -376,8 +390,10 @@ ul {
     }
     .bottom-wrapper .text{
         width: 80%;
-        margin: 0 50px;
-        padding: 0;
+        margin: auto;
+    }
+    .bottom-wrapper .picture .mobile{
+        margin-left: 0;
     }
 
     .footer-wrapper{
@@ -397,8 +413,7 @@ ul {
         display: block;
         position: absolute;
         right: 50px;
-        max-width: 370px;
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
     .mob-menu{
